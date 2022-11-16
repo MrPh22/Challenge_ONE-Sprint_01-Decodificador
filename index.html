@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <title>Decodificador Alura - Sprint 01</title>
+
+        <link rel="stylesheet" href="./CSS/reset.css">
+        <link rel="stylesheet" href="./CSS/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+               <h1 class="titulo">Chanllenge - Decodificador Alura</h1>         
+        </header>
+        <main>
+            <div class="logo_a">
+                <!--OLÁ! JÁ QUE ESTÁ AQUI, CLIQUE NA LOGO DA ALURA-->
+                <img src="./images/Logo.png" alt="Logo da Alura (somente a letra 'a')">
+            </div> 
+            <section>  
+                <div class="msg_aparece">
+                    <!--<img src="./imagens/mostra_msg.png" alt="Campo onde a mesagem criptografada ou descriptografada aparece" class="campo_msg">-->
+                    <textarea cols="30" rows="70" class="campo_msg" style="resize: none;" readonly></textarea>
+                </div>
+                <div id="aparece_copia">
+                    <bottom type="submit" class="copiar" onclick="copia()">Copiar</bottom>
+                </div>
+            </section>
+            <section>  
+                <div class="escreve">
+                    <p class="label_texto">Atenção! Apenas letras minúsculas e sem acento.</p> 
+                    <!--<input type="text" id="digite" class="digite_texto" required placeholder="Digite seu texto">-->
+                    <textarea cols="50" rows="40" class="digite_texto" required placeholder="Digite seu texto" style="resize: none;"></textarea>
+                </div>
+                <div class="botao">
+                    <bottom type="submit" class="cripto" onclick="cripto()">Criptografar</bottom>
+                    <bottom type="submit" class="descripto" onclick="descripto()">Descriptografar</bottom>
+                </div>
+            </section> 
+        </main>
+        <footer>
+            <p class="copyrigth"> &copy; Copyrigth Alura e Programa ONE - 2022</p>
+            <p class="copyrigth"> &copy; Copyrigth Pedro H. P. Gutierrez - 2022</p>
+        </footer>
+        <script src="./JS/script.js"></script>
+    </body>
+</html>
